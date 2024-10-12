@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474402818165",
+    "project_id": "khetibridge2-8051c",
+    "storage_bucket": "khetibridge2-8051c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474402818165:android:d680a44acd9fb450b6103c",
+        "android_client_info": {
+          "package_name": "com.example.kheti_project2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-JRwK4_cb7rGodNf4t9BaF9pdqa0XGL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
