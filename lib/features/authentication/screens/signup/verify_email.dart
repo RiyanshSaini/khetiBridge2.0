@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 
-import '../../../../common/widgets/success_screen/success_screen1.dart';
 import '../../../../data/repository/authentication/authentication_repository.dart';
 import '../../../../utils/constants/images_strings.dart';
 import '../../../../utils/constants/size.dart';
 
 import '../../../../utils/helpers/helper_function.dart';
 import '../../controller/verify_email_controller.dart';
-import '../login/login.dart';
 // Assuming CupertinoIcons is imported
 
 class VerifyEmailScreen extends StatelessWidget {

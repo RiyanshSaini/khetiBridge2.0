@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 
-import '../../../../utils/constants/colors.dart';
 import '../../../../utils/helpers/helper_function.dart';
 import 'OnBoardingNextButton.dart';
 import 'OnBoardingPageDotNavigation.dart';

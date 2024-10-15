@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:kheti_project2/features/personalization/screens/settings/settings.dart';
 import 'package:kheti_project2/features/shop/screens/home/home.dart';
+import 'package:kheti_project2/features/shop/screens/store/store.dart';
+import 'package:kheti_project2/features/shop/screens/wishlist/wishlist.dart';
 import 'package:kheti_project2/utils/constants/colors.dart';
 import 'package:kheti_project2/utils/helpers/helper_function.dart';
 
@@ -24,15 +27,15 @@ class NavigationMenu extends StatelessWidget {
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) =>
               controller.selectedIndex.value = index,
-          backgroundColor: darkMode ? Colors.green[900] : Colors.green[50],
+          backgroundColor: darkMode ? RColors.darkGrey : RColors.greenShade100,
           indicatorColor: darkMode
               ? Colors.green[200]?.withOpacity(0.2)
               : Colors.green[700]?.withOpacity(0.1),
           destinations: [
-            NavigationDestination(icon: Icon(Iconsax.home), label: 'home'.tr),
-            NavigationDestination(icon: Icon(Iconsax.shop), label: 'store'.tr),
-            NavigationDestination(icon: Icon(Iconsax.heart), label: 'wishlist'.tr),
-            NavigationDestination(icon: Icon(Iconsax.user), label: 'profile'.tr),
+            NavigationDestination(icon: const Icon(Iconsax.home), label: 'home'.tr),
+            NavigationDestination(icon: const Icon(Iconsax.shop), label: 'store'.tr),
+            NavigationDestination(icon: const Icon(Iconsax.heart), label: 'wishlist'.tr),
+            NavigationDestination(icon: const Icon(Iconsax.user), label: 'profile'.tr),
           ],
         ),
       ),
@@ -47,8 +50,9 @@ class NavigationController extends GetxController {
 
   final List<Widget> screens = [
     const HomeScreen2(), // Home screen
-    const HomeScreen(), // Store screen
-    Container(color: Colors.orange), // Wishlist screen
-    Container(color: Colors.blue), // Profile screen
+    const StoreScreen(),
+    const FavouriteScreen(),
+    const SettingsScreen(), // Store screen
+     // Profile screen
   ];
 }

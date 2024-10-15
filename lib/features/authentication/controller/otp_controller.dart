@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kheti_project2/features/authentication/screens/login/temporary_main_screen.dart';
 

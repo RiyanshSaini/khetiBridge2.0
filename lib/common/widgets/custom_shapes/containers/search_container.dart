@@ -3,7 +3,6 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/size.dart';
-import '../../../../utils/device/device_utils.dart';
 import '../../../../utils/helpers/helper_function.dart';
 
 class RSearchContainer extends StatelessWidget {
@@ -11,15 +10,17 @@ class RSearchContainer extends StatelessWidget {
     super.key,
     required this.text,
     this.icon = Iconsax.search_normal,
-    this.showBackGround = true,
+    this.showBackground = true,
     this.showBorder = true,
     this.onTap,
+    this.padding = const EdgeInsets.all(RSizes.md)
   });
 
   final String text;
   final IconData? icon;
-  final bool showBackGround, showBorder;
+  final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsets padding;
 
   @override
   Widget build(BuildContext context) {
@@ -29,24 +30,24 @@ class RSearchContainer extends StatelessWidget {
       onTap: onTap,
       child: Container(
         width: double.infinity, // Ensure full width
-        padding: const EdgeInsets.all(RSizes.md), // Padding inside the container
+        padding: padding, // Padding inside the container
         decoration: BoxDecoration(
-          color: showBackGround
+          color: showBackground
               ? darkMode
-              ? Colors.yellow.shade600
-              : Colors.green.shade100 // Soft green background
-              : Colors.transparent,
+              ? RColors.gold1
+              : RColors.greenShade100 // Soft green background
+              : RColors.transparent,
           borderRadius: BorderRadius.circular(RSizes.cardRadiusLg * 2), // Rounded corners
-          boxShadow: [], // Remove shadow completely
+
         ),
         child: Row(
           children: [
-            Icon(icon, color: Colors.green.shade700), // Dark green icon
+            Icon(icon, color: RColors.emeraldGreen), // Dark green icon
             const SizedBox(width: RSizes.spaceBtwItems),
             Text(
               text,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Colors.green.shade900, // Darker green text
+                color: RColors.darkGreen// Darker green text
               ),
             ),
           ],

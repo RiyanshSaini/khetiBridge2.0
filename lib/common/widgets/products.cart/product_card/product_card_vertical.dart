@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:kheti_project2/common/widgets/texts/brand_text_and_icon.dart';
 import 'package:kheti_project2/common/widgets/texts/product_price_text.dart';
 import 'package:kheti_project2/common/widgets/texts/product_title.text.dart';
 
+import '../../../../features/shop/screens/product_details/product_details.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/images_strings.dart';
 import '../../../../utils/constants/size.dart';
@@ -20,7 +24,7 @@ class RProductCardVertical extends StatelessWidget {
     final dark = RHelperFunctions.isDarkMode(context); // Detect dark mode
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 188,
         padding: const EdgeInsets.all(8),
@@ -94,22 +98,7 @@ class RProductCardVertical extends StatelessWidget {
                       smallSize: true,
                     ),
                     const SizedBox(height: RSizes.spaceBtwItems / 2),
-                    Row(
-                      children: [
-                        Text(
-                          'KMB',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium,
-                        ),
-                        const SizedBox(width: RSizes.xs),
-                        const Icon(
-                          Iconsax.verify5,
-                          color: RColors.primary,
-                          size: RSizes.iconXs,
-                        ),
-                      ],
-                    ),
+                    const RBrandTitleWithVerifiedIcon(title: "Bio Fertilizer"),
                     const SizedBox(height: RSizes.spaceBtwItems),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

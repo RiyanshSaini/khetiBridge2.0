@@ -5,7 +5,6 @@ import 'package:kheti_project2/features/authentication/screens/otp/opt_screen.da
 
 import '../../../../utils/constants/size.dart';
 import '../../../../utils/device/device_utils.dart';
-import '../login/login.dart';
 
 class OnBoardingPageSkip extends StatelessWidget {
   const OnBoardingPageSkip({
@@ -19,7 +18,7 @@ class OnBoardingPageSkip extends StatelessWidget {
       right: RSizes.defaultSpace + 18,
       child: GestureDetector(
         onTap: () {
-          Get.to(() => OTPScreen()); // Navigate to the login screen on press
+          Get.to(() => const OTPScreen()); // Navigate to the login screen on press
         },
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),

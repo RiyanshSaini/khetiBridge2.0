@@ -89,6 +89,7 @@ flutter:
     - assets/images/tempLoadingGif.gif
     - assets/images/tempSuccessfull.json
     - assets/products/
+    - assets/user/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

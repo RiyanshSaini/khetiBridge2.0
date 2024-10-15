@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class RImages {
   // App Logos ( both are same for now )
@@ -30,14 +29,17 @@ class RImages {
   static const String productImage3 = "assets/products/Product3.png";
   static const String productImage4 = "assets/products/Product4.png";
 
-
-
+  // USER Gif :
+  static const String userGif1 = "assets/user/farmerIconGif1.gif";
+  static const String userGif2 = "assets/user/farmerIconGif2.gif";
+  static const String userGif3 = "assets/user/farmerIconGif3.gif";
 
   static const String tempLoadingGif = "assets/images/tempLoadingGif.gif";
   static const String tempLoadingJson = "assets/images/tempLoading.json";
   static const String successfullyRegisterAnimation = "assets/images/tempSuccessfull.json";
 
   static const String tempImage = "assets/icons/add.png";
+  static const String tempSeed = "assets/icons/tempSeed.png";
   
   
 

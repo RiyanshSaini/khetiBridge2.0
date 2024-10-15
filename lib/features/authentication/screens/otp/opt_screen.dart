@@ -5,7 +5,6 @@ import 'package:get/get.dart'; // Import GetX package
 import '../../controller/otp_controller.dart';
 import '../../controller/sign_up_controller.dart';
 import '../login/login.dart';
-import '../signup/signup.dart';
 
 
 class OTPScreen extends StatefulWidget {
@@ -120,7 +119,7 @@ class _OTPScreenState extends State<OTPScreen> {
                       ),
                     ),
                     onPressed: () {
-                      Get.to(() => LoginScreen()); // Navigate to SignupScreen using GetX
+                      Get.to(() => const LoginScreen()); // Navigate to SignupScreen using GetX
                     },
                     child: const Padding(
                       padding: EdgeInsets.symmetric(vertical: 15),

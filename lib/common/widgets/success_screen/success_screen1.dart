@@ -4,10 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../features/authentication/screens/login/login.dart';
-import '../../../utils/constants/images_strings.dart';
 import '../../../utils/constants/size.dart';
-import '../../../utils/constants/text_strings.dart';
-import '../../../utils/helpers/helper_function.dart';
 import '../../style/spacing_style.dart';
 
 class SuccessScreen extends StatelessWidget {

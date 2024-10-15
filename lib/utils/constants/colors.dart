@@ -71,9 +71,12 @@ class RColors {
   static const Color forestGreen = Color(0xFF228B22);
   static const Color lightGreen = Color(0xFF90EE90);
   static  Color darkGreen = Colors.green.shade800;
+  static Color greenShade100 = Colors.green.shade100;
 
   static Color gold1 = const Color(0xffd5b306);
   static Color gold2 = const Color(0x00ffd700);
+
+  static Color transparent = Colors.transparent;
 
 
 }

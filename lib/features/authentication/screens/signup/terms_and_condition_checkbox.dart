@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/size.dart';
-import '../../../../utils/constants/text_strings.dart';
 
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../utils/helpers/helper_function.dart';

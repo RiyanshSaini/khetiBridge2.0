@@ -1,5 +1,4 @@
 
-import 'package:flutter/material.dart';
 
 class RSizes {
   RSizes._(); // To avoid creating instances

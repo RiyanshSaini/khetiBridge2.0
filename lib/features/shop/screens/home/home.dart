@@ -1,20 +1,14 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:kheti_project2/common/widgets/products.cart/product_card/product_card_vertical.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/promo_slider.dart';
-import '../../../../common/images/rounded_image.dart';
-import '../../../../common/widgets/custom_shapes/containers/custom_circular_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
-import '../../../../common/widgets/image_text_widgets/vertical_text_image.dart';
 import '../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
-import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/images_strings.dart';
 import '../../../../utils/constants/size.dart';
-import '../../../../utils/helpers/helper_function.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,16 +23,16 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   // Enhanced RAppBar with agriculture theme
-                  const RHomeAppBar(),
-                  const SizedBox(
+                  RHomeAppBar(),
+                  SizedBox(
                     height: RSizes.spaceBtwSections,
                   ),
 
                   // SEARch BAR
-                  const RSearchContainer(
+                  RSearchContainer(
                     text: "Search here",
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: RSizes.spaceBtwSections,
                   ),
 
@@ -47,14 +41,14 @@ class HomeScreen extends StatelessWidget {
 
                   // ------------ HEADINGS ---------------
                   Padding(
-                    padding: const EdgeInsets.only(left: RSizes.defaultSpace),
+                    padding: EdgeInsets.only(left: RSizes.defaultSpace),
                     child: Column(
                       children: [
-                        const RSectionHeading(
+                        RSectionHeading(
                           title: 'Popular Categories',
                           showActionButton: false,
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: RSizes.spaceBtwItems,
                         ),
                         // ------------- CATEGORIES -------------

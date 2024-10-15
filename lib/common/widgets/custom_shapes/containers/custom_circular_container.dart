@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../utils/constants/colors.dart';
+
 class RCircularContainer extends StatelessWidget {
   const RCircularContainer({
     super.key,
@@ -34,7 +36,7 @@ class RCircularContainer extends StatelessWidget {
         boxShadow: shadow
             ? [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: RColors.black.withOpacity(0.1),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),

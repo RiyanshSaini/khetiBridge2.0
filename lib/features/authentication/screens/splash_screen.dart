@@ -3,8 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:kheti_project2/features/authentication/screens/otp/opt_screen.dart';
 import '../../../utils/constants/colors.dart';
-import '../../personalization/screens/language_selection.dart';
-import 'login/login.dart';
+import '../../personalization/language/language_selection.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

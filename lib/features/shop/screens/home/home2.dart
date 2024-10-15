@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/promo_slider.dart';
@@ -22,10 +21,10 @@ class HomeScreen2 extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           // First SliverAppBar: Contains tractor icon and welcome message (collapsible)
-          const SliverAppBar(
+          SliverAppBar(
             expandedHeight: 300.0,
-            backgroundColor: Colors.transparent,
-            flexibleSpace: FlexibleSpaceBar(
+            backgroundColor: RColors.transparent,
+            flexibleSpace: const FlexibleSpaceBar(
               background: RPrimaryHeaderContainer(
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
@@ -52,7 +51,7 @@ class HomeScreen2 extends StatelessWidget {
           SliverPersistentHeader(
             pinned: true,
             delegate: SearchBarDelegate(
-              child: RSearchContainer(
+              child: const RSearchContainer(
                 text: "Search here",
               ),
             ),

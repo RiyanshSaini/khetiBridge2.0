@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'dart:io';  // For Platform checks
-import 'package:url_launcher/url_launcher.dart';  // For URL launching
+// For URL launching
 import 'dart:async'; // For async operations
-import 'dart:io';
 
 import 'package:url_launcher/url_launcher_string.dart'; // For InternetAddress
 

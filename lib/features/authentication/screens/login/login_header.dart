@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../utils/constants/images_strings.dart';
 import '../../../../utils/constants/size.dart';
-import '../../../../utils/constants/text_strings.dart';
 
 class TLoginHeader extends StatelessWidget {
   const TLoginHeader({

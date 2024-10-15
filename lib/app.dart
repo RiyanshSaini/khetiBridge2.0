@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:kheti_project2/features/authentication/screens/splash_screen.dart';
 import 'package:kheti_project2/navigation_menu.dart';
 import 'package:kheti_project2/utils/theme/theme.dart';
 import 'bindings/general_bindings.dart';
-import 'features/authentication/screens/otp/opt_screen.dart';
 import 'localization/language/translation.dart';
 // Assuming you have light/dark themes defined here
 

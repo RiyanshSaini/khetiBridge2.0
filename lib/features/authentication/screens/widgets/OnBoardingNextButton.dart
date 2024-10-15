@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 
-import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/size.dart';
 import '../../../../utils/device/device_utils.dart';
 import '../../../../utils/helpers/helper_function.dart';

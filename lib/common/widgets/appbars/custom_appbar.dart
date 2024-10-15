@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart'; // Assuming you're using GetX for navigation
 
 class RAppBar extends StatelessWidget implements PreferredSizeWidget {
   const RAppBar({
     super.key,
-    required this.title,
+    this.title,
     this.actions,
     this.leadingIcon,
     this.leadingOnPressed,
     this.showBackArrow = false,
   });
 
-  final Widget title;
+  final Widget? title;
   final List<Widget>? actions;
   final IconData? leadingIcon;
   final VoidCallback? leadingOnPressed;
