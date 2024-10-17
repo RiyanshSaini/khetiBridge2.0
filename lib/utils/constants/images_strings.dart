@@ -40,6 +40,9 @@ class RImages {
 
   static const String tempImage = "assets/icons/add.png";
   static const String tempSeed = "assets/icons/tempSeed.png";
+
+  // Payments :
+  static const String paytm = "assets/icons/payments/paytm.svg";
   
   
 

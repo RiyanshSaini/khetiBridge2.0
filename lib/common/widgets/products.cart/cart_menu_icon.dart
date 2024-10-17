@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:kheti_project2/features/shop/screens/cart/cart.dart';
 
 import '../../../utils/constants/colors.dart';
 
@@ -17,9 +20,7 @@ class RCartCounterIcon extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         IconButton(
-          onPressed: () {
-            // Define the action here
-          },
+          onPressed: () => Get.to(() => const CartScreen()),
           icon: Icon(
             Iconsax.shopping_bag,
             color: iconColor,

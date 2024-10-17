@@ -10,7 +10,7 @@ class RCircularIcon extends StatelessWidget {
     this.width,
     this.height,
     this.size = RSizes.iconLg,
-    required this.icon,
+    this.icon = Icons.favorite_border,
     this.color,
     this.backgroundColor,
     this.onPressed,
@@ -37,8 +37,8 @@ class RCircularIcon extends StatelessWidget {
       ),
       child: IconButton(
         onPressed: () {},
-        icon: const Icon(
-          Icons.favorite_border,
+        icon: Icon(
+          icon,
           color: Colors.redAccent,
         ),
       ),

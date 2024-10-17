@@ -20,7 +20,7 @@ class RHelperFunctions {
     } else if (value == 'Black') {
       return Colors.black;
     } else {
-      return Colors.white; // Default color if no match
+      return null; // Default color if no match
     }
   }
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:kheti_project2/features/personalization/screens/address/addresses.dart';
 
 import '../../../../common/widgets/appbars/custom_appbar.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header.dart';
@@ -48,10 +49,11 @@ class SettingsScreen extends StatelessWidget {
                   const RSectionHeading(title: "Account Settings", showActionButton: false),
                   const SizedBox(height: RSizes.spaceBtwSections),
 
-                  const RSettingsMenuTile(
+                  RSettingsMenuTile(
                     icon: Iconsax.home,
                     title: 'My Addresses',
                     subTitle: 'Set shopping delivery address',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   const RSettingsMenuTile(
                     icon: Iconsax.shopping_cart,

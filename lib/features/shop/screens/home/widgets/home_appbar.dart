@@ -55,7 +55,7 @@ class RHomeAppBar extends StatelessWidget {
         // Shopping bag icon with a farming-related color theme
         RCartCounterIcon(
           iconColor: Colors.yellow.shade700,
-          onPressed: () {},
+          onPressed: () {},       // no need on onPressed , path already defined.
         ),
         const SizedBox(width: 8),
         // Icon for adding crops or eco-related actions
