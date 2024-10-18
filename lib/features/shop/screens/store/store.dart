@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:kheti_project2/common/widgets/appbars/custom_tabbar.dart';
 import 'package:kheti_project2/common/widgets/layouts/grid_layout.dart';
+import 'package:kheti_project2/features/shop/screens/brands/all_brands.dart';
 import 'package:kheti_project2/features/shop/screens/store/widgets/categority_tab.dart';
 
 import '../../../../common/widgets/appbars/custom_appbar.dart';
@@ -61,7 +64,7 @@ class StoreScreen extends StatelessWidget {
                         ), // RSearchContainer
                         const SizedBox(height: RSizes.spaceBtwSections),
                         RSectionHeading(
-                            title: 'Featured Brands', onPressed: () {}),
+                            title: 'Featured Brands', onPressed: () => Get.to(const AllBrandsScreen())),
                         const SizedBox(height: RSizes.spaceBtwItems / 1.5),
 
                         /// --------- GRID ----------------///

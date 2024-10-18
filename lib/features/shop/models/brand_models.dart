@@ -6,6 +6,6 @@ class BrandModel {
   BrandModel({
     required this.name,
     required this.image,
-    this.productsCount,
+    this.productsCount = 4,
   });
 }

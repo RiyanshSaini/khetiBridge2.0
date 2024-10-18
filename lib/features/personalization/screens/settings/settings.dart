@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:kheti_project2/features/personalization/screens/address/addresses.dart';
+import 'package:kheti_project2/features/shop/screens/order/order.dart';
+import 'package:kheti_project2/features/shop/screens/order/widgets/orders_list.dart';
 
 import '../../../../common/widgets/appbars/custom_appbar.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header.dart';
@@ -60,10 +62,11 @@ class SettingsScreen extends StatelessWidget {
                     title: 'My Cart',
                     subTitle: 'Add, remove products and move to checkout',
                   ),
-                  const RSettingsMenuTile(
+                  RSettingsMenuTile(
                     icon: Iconsax.box_tick,
                     title: 'My Orders',
                     subTitle: 'In-progress and Completed Orders',
+                    onTap: () => Get.to(() => const OrderScreen()) ,
                   ),
                   const RSettingsMenuTile(
                     icon: Iconsax.bank,

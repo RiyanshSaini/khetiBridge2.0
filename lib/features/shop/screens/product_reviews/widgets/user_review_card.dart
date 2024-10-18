@@ -9,7 +9,7 @@ import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/helpers/helper_function.dart';
 
 class RUserReviewCard extends StatelessWidget {
-  const RUserReviewCard({Key? key}) : super(key: key);
+  const RUserReviewCard({super.key});
 
   @override
   Widget build(BuildContext context) {

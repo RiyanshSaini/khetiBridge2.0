@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:kheti_project2/features/shop/screens/all_products/all_products.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:kheti_project2/features/shop/screens/home/widgets/promo_slider.dart';
@@ -27,19 +30,20 @@ class HomeScreen2 extends StatelessWidget {
             flexibleSpace: const FlexibleSpaceBar(
               background: RPrimaryHeaderContainer(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      RHomeAppBar(),  // Tractor icon + Welcome text
-                      SizedBox(height: 16),
-                      RSectionHeading(
+                      const RHomeAppBar(),  // Tractor icon + Welcome text
+                      const SizedBox(height: 16),
+                      const RSectionHeading(
                         title: 'Popular Categories',
                         showActionButton: false,
-                      ),
-                      SizedBox(height: 10),
-                      RHomeCategories(),  // Add categories directly inside this section
+                        ),
+
+                      const SizedBox(height: 10),
+                      const RHomeCategories(),  // Add categories directly inside this section
                     ],
                   ),
                 ),
